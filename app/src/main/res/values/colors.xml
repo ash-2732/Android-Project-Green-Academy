@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="purple">#8692f7</color>
+    <color name="primary">#5cb85c</color>
+    <color name="background_color_50">#80363668</color>
+    <color name="green">#0d6e6a</color>
+    <color name="another">#01AED8</color>
+    <color name="colorSuccess">#4bb543</color>
+    <color name="bootstrap">#5cb85c</color>
+
+    <color name="back">#F4F7FD</color>
+</resources>

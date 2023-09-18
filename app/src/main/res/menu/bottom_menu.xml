@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:iconTint="@color/black"
+        android:icon="@drawable/baseline_home_24"/>
+
+    <item
+        android:id="@+id/skill"
+        android:title="Skills"
+        android:iconTint="@color/black"
+        android:icon="@drawable/baseline_rocket_24"/>
+
+
+    <item
+        android:title=""
+        />
+
+    <item
+        android:id="@+id/help"
+        android:title="HelpLine"
+        android:iconTint="@color/black"
+        android:icon="@drawable/baseline_help_center_24"/>
+
+    <item
+        android:id="@+id/about"
+        android:title="More"
+        android:iconTint="@color/black"
+        android:icon="@drawable/baseline_more_24"/>
+
+
+</menu>

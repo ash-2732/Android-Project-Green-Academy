@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DashBoard">
+
+    <TextView
+        android:id="@+id/verifyMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:text="Email not Verified!"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+
+        android:id="@+id/resendCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30sp"
+        android:textAllCaps="false"
+        android:background="@drawable/round_back_primary_15"
+        android:text="Verify Email"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/seeProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30sp"
+        android:textAllCaps="false"
+        android:background="@drawable/round_back_primary_15"
+        android:text="Go to Profile"/>
+</LinearLayout>

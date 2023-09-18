@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "80641532317",
+    "project_id": "green-academy2",
+    "storage_bucket": "green-academy2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:80641532317:android:bfcebcc3e4de468ff44f74",
+        "android_client_info": {
+          "package_name": "com.example.greenacademy2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "80641532317-67h8b45s4f2ljgbph39frcqsvvo1dqn9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRW75nz0yJ00IjhS7KHO3AR12VOiwp5Ss"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "80641532317-67h8b45s4f2ljgbph39frcqsvvo1dqn9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
