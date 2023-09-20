@@ -14,7 +14,7 @@ import android.widget.Toast;
 
 public class PremiumVideo extends AppCompatActivity {
 
-    private TextView msg;
+    private TextView msg , teacher_1 , teacher_2 ;
     private AppCompatButton showVideo;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +31,16 @@ public class PremiumVideo extends AppCompatActivity {
         webView.getSettings().setJavaScriptEnabled( true );
         webView.setWebChromeClient( new WebChromeClient());
 
+        // For setting teacher name
+        teacher_1 = findViewById(R.id.teacher_1);
+        String tea1 = getIntent().getStringExtra("keyTeach_1");
+        teacher_1.setText( tea1 );
+
+        teacher_2 = findViewById(R.id.teacher_2);
+        String tea2 = getIntent().getStringExtra("keyTeach_2");
+        teacher_2.setText( tea2 );
+
+        // Premium or free
         msg = findViewById(R.id.msg);
         String text = getIntent().getStringExtra("keymsg");
         msg.setText(text);
@@ -64,7 +74,7 @@ public class PremiumVideo extends AppCompatActivity {
         cancelVideo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(PremiumVideo.this, "Video Stopped", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(PremiumVideo.this, "Video Stopped", Toast.LENGTH_SHORT).show();
                 dialog.dismiss();
             }
         });

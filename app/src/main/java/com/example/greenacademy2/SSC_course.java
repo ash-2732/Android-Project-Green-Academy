@@ -4,15 +4,22 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.webkit.WebChromeClient;
+import android.webkit.WebView;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.Toast;
 
 public class SSC_course extends AppCompatActivity {
 
     private CardView ssc_physics , ssc_chemistry , ssc_math , ssc_higher_math,
             ssc_biology , ssc_ict , premium1 , free1;
+
+    private Button seeDetails;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -86,9 +93,17 @@ public class SSC_course extends AppCompatActivity {
 
                 String video = "<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/DfwPsKxqhfU?si=bO9PW7EEI8jjOrsi\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>";
                 String msg = "1000TK";
+
+                String teacher_1 = "Dibbyo Roy";
+                String teacher_2 = "Ferdous Mondol";
+
                 Intent intent = new Intent(getApplicationContext() , PremiumVideo.class);
                 intent.putExtra("keymsg" , msg);
                 intent.putExtra("keyvideo" , video);
+
+                intent.putExtra("keyTeach_1" , teacher_1);
+                intent.putExtra("keyTeach_2" , teacher_2);
+
                 startActivity(intent);
             }
         });
@@ -102,12 +117,51 @@ public class SSC_course extends AppCompatActivity {
 
                 String video = "<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/DfwPsKxqhfU?si=bO9PW7EEI8jjOrsi\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>";
                 String msg = "Free";
+                String teacher_1 = "Tahsin Ahmed";
+                String teacher_2 = "Mh Shawon";
                 Intent intent = new Intent(getApplicationContext() , PremiumVideo.class);
                 intent.putExtra("keymsg" , msg);
                 intent.putExtra("keyvideo" , video);
+
+                intent.putExtra("keyTeach_1" , teacher_1);
+                intent.putExtra("keyTeach_2" , teacher_2);
+
                 startActivity(intent);
             }
         });
+
+
+        // this part is for dialog_video
+        seeDetails = findViewById(R.id.seeDetails);
+        seeDetails.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showAlertDialogBox();
+            }
+        });
+    }
+
+    private void showAlertDialogBox() {
+        Dialog dialog = new Dialog(this);
+        dialog.setContentView(R.layout.video_dialogbox);
+
+        WebView webView2 = dialog.findViewById(R.id.webView2);
+        //String video = "<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/voaXwzxJTr8?si=89GGh_ukimdW3ClO\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>";
+
+        String video = "<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/DfwPsKxqhfU?si=bO9PW7EEI8jjOrsi\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>";
+        webView2.loadData(video,"text/html" , "utf-8");
+        webView2.getSettings().setJavaScriptEnabled( true );
+        webView2.setWebChromeClient( new WebChromeClient());
+
+        ImageView cancelVideo = dialog.findViewById(R.id.cancelVideo);
+        cancelVideo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(SSC_course.this, "Video Stopped", Toast.LENGTH_SHORT).show();
+                dialog.dismiss();
+            }
+        });
+        dialog.show();
     }
 
 

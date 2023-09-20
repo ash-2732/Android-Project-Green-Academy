@@ -43,7 +43,7 @@
                     android:layout_height="wrap_content"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:textColor="@color/primary"
+                    android:textColor="@color/black"
                     android:layout_marginStart="10dp"
                     android:text="Course Speciality"/>
                 <TextView
@@ -89,11 +89,12 @@
                     android:layout_height="wrap_content"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:textColor="@color/primary"
+                    android:textColor="@color/black"
                     android:layout_marginStart="10dp"
                     android:text="Course Instructor"/>
 
                 <TextView
+                    android:id="@+id/teacher_1"
                     android:textStyle="bold"
                     android:layout_marginTop="05dp"
                     android:layout_width="match_parent"
@@ -101,7 +102,7 @@
                     android:textSize="16sp"
                     android:textColor="@color/black"
                     android:layout_marginStart="10dp"
-                    android:text="Tahsin Ahmed"/>
+                    />
                 <TextView
                     android:layout_marginTop="05dp"
                     android:layout_width="match_parent"
@@ -117,6 +118,7 @@
                     android:layout_height="0.5dp"
                     android:background="#1A000000"/>
                 <TextView
+                    android:id="@+id/teacher_2"
                     android:textStyle="bold"
                     android:layout_marginTop="05dp"
                     android:layout_width="match_parent"
@@ -124,7 +126,7 @@
                     android:textSize="16sp"
                     android:textColor="@color/black"
                     android:layout_marginStart="10dp"
-                    android:text="Mh Shawon"/>
+                    />
                 <TextView
                     android:layout_marginTop="05dp"
                     android:layout_width="match_parent"
@@ -152,7 +154,7 @@
                     android:layout_height="wrap_content"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:textColor="@color/primary"
+                    android:textColor="@color/black"
                     android:layout_marginStart="10dp"
                     android:text="Course Details"/>
                 <TextView
@@ -185,24 +187,56 @@ with best teachers."/>
                     android:layout_height="wrap_content"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:textColor="@color/primary"
+                    android:textColor="@color/black"
                     android:layout_marginStart="10dp"
                     android:text="Payment Process"/>
 
                 <androidx.appcompat.widget.AppCompatButton
 
                     android:id="@+id/showVideo"
-                    android:layout_width="150sp"
+                    android:layout_width="match_parent"
                     android:layout_height="55dp"
-                    android:text="Click me"
+                    android:text="Know Details"
                     android:textAllCaps="false"
                     android:layout_gravity="center_vertical"
-                    android:background="@drawable/round_back_primary_15"
-                    android:textColor="#ffffff"
+                    android:background="@drawable/chapter_name"
+                    android:textColor="@color/primary"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="20dp"
                     android:layout_marginEnd="20dp">
                 </androidx.appcompat.widget.AppCompatButton>
             </LinearLayout>
 
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="#1A000000"/>
+
+            <TextView
+                android:layout_marginTop="05dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginStart="10dp"
+                android:text="Have you any question?"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+
+                android:id="@+id/callNow"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="Call Now"
+                android:textAllCaps="false"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/chapter_name"
+                android:textColor="@color/primary"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp">
+            </androidx.appcompat.widget.AppCompatButton>
 
         </LinearLayout>
 
@@ -212,36 +246,47 @@ with best teachers."/>
     <!-- Fixed Bottom Part -->
     <LinearLayout
         android:id="@+id/bottomFixedLayout"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="80sp"
         android:layout_alignParentBottom="true"
-        android:background="@color/white">
+        android:layout_height="80sp">
 
-        <!-- Your fixed content here -->
-        <TextView
-            android:id="@+id/msg"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:textSize="25sp"
-            android:textColor="@color/primary"
-            android:textStyle="bold"
-            android:layout_weight="1"
-            android:layout_marginStart="20dp"
-            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="#1A000000"/>
 
-        <androidx.appcompat.widget.AppCompatButton
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="80sp"
+            android:background="@color/back">
 
-            android:id="@+id/sendDetails"
-            android:layout_width="150sp"
-            android:layout_height="55dp"
-            android:text="Enroll"
-            android:textAllCaps="false"
-            android:layout_gravity="center_vertical"
-            android:background="@drawable/round_back_primary_15"
-            android:textColor="#ffffff"
-            android:layout_marginEnd="20dp">
-        </androidx.appcompat.widget.AppCompatButton>
+            <!-- Your fixed content here -->
+            <TextView
+                android:id="@+id/msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textSize="25sp"
+                android:textColor="@color/primary"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_marginStart="20dp"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+
+                android:id="@+id/sendDetails"
+                android:layout_width="150sp"
+                android:layout_height="55dp"
+                android:text="Enroll"
+                android:textAllCaps="false"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/round_back_primary_15"
+                android:textColor="#ffffff"
+                android:layout_marginEnd="20dp">
+            </androidx.appcompat.widget.AppCompatButton>
+        </LinearLayout>
     </LinearLayout>
 </RelativeLayout>
