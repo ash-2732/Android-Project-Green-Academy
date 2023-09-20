@@ -7,10 +7,11 @@ import androidx.cardview.widget.CardView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.LinearLayout;
 
 public class SSC_Biology extends AppCompatActivity {
 
-    private CardView chapter_1 , chapter_2 , chapter_3 , chapter_4 , chapter_5 , chapter_6,
+    private LinearLayout chapter_1 , chapter_2 , chapter_3 , chapter_4 , chapter_5 , chapter_6,
             chapter_7 ,chapter_8 , chapter_9 , chapter_10 , chapter_11 , chapter_12 , chapter_13,
             chapter_14;
     @Override

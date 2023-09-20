@@ -154,6 +154,7 @@ public class UserProfile extends AppCompatActivity {
         fileRef.putFile( imageUri ).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
             @Override
             public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+
                 //Toast.makeText(UserProfile.this, "Image Uploaded", Toast.LENGTH_SHORT).show();
                 showAlertDialogBox();
 

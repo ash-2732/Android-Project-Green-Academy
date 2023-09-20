@@ -56,5 +56,9 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
     implementation 'com.google.android.exoplayer:exoplayer:2.19.1'
 
+    //blurView
+
+
+
 
 }

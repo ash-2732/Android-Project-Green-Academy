@@ -40,6 +40,7 @@
                     android:columnCount="2">
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/hsc_physics"
                         app:cardBackgroundColor="@color/white"
                         app:cardCornerRadius="5dp"
                         android:layout_marginStart="10dp"

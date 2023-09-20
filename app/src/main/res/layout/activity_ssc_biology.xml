@@ -39,501 +39,325 @@
                     android:rowCount="7"
                     android:columnCount="2">
 
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/chapter_1"
-                        app:cardBackgroundColor="@color/white"
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:id="@id/chapter_1"
+                        android:background="@drawable/chapter_name"
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
+                        android:layout_columnWeight="1"
                         android:layout_marginStart="10dp"
-                        android:layout_width="150dp"
-                        android:layout_height="50dp"
+                        android:layout_rowWeight="1"
                         android:layout_row="0"
-                        android:layout_column="0"
-                        android:layout_columnWeight="1"
-                        android:layout_rowWeight="1">
+                        android:layout_column="0">
 
-                        <LinearLayout
+                        <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:orientation="horizontal">
+                            android:gravity="center"
+                            android:textSize="16sp"
+                            android:text="Chapter 1"
+                            android:textColor="@color/black"/>
 
-                            <!--                            <ImageView-->
+                    </LinearLayout>
 
-                            <!--                                android:src="@drawable/ssc_phy_1"-->
-                            <!--                                android:layout_width="match_parent"-->
-                            <!--                                android:layout_height="match_parent"-->
-                            <!--                                />-->
-
-                            <TextView
-                                android:text="Chapter 1"
-                                android:textColor="@color/black"
-                                android:gravity="center"
-                                android:textSize="16sp"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                />
-                        </LinearLayout>
-
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/chapter_2"
-                        app:cardBackgroundColor="@color/white"
+                    <LinearLayout
                         android:layout_marginEnd="10dp"
                         android:layout_marginStart="5dp"
-                        android:layout_width="150dp"
-                        android:layout_height="50dp"
+                        android:orientation="vertical"
+                        android:id="@id/chapter_2"
+                        android:background="@drawable/chapter_name"
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
                         android:layout_row="0"
-                        android:layout_column="1"
-                        android:layout_columnWeight="1"
-                        android:layout_rowWeight="1">
+                        android:layout_column="1">
 
-                        <LinearLayout
+                        <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:orientation="horizontal">
+                            android:gravity="center"
+                            android:textSize="16sp"
+                            android:text="Chapter 2"
+                            android:textColor="@color/black"/>
 
-                            <!--                            <ImageView-->
-                            <!--                                android:src="@drawable/ssc_phy_2"-->
-                            <!--                                android:layout_width="match_parent"-->
-                            <!--                                android:layout_height="match_parent"-->
-                            <!--                                />-->
+                    </LinearLayout>
 
-                            <TextView
-                                android:text="Chapter 2"
-                                android:textColor="@color/black"
-                                android:gravity="center"
-                                android:textSize="16sp"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                />
-                        </LinearLayout>
-
-                    </androidx.cardview.widget.CardView>
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/chapter_3"
-                        app:cardBackgroundColor="@color/white"
+                    <LinearLayout
                         android:layout_marginStart="10dp"
                         android:layout_marginTop="5dp"
-                        android:layout_width="150dp"
-                        android:layout_height="50dp"
+                        android:orientation="vertical"
+                        android:id="@id/chapter_3"
+                        android:background="@drawable/chapter_name"
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
                         android:layout_row="1"
-                        android:layout_column="0"
-                        android:layout_columnWeight="1"
-                        android:layout_rowWeight="1">
+                        android:layout_column="0">
 
-                        <LinearLayout
+                        <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:orientation="horizontal">
+                            android:gravity="center"
+                            android:textSize="16sp"
+                            android:text="Chapter 3"
+                            android:textColor="@color/black"/>
 
-                            <!--                            <ImageView-->
-                            <!--                                android:src="@drawable/ssc_phy_3"-->
-                            <!--                                android:layout_width="match_parent"-->
-                            <!--                                android:layout_height="match_parent"-->
-                            <!--                                android:layout_gravity="center"/>-->
-
-                            <TextView
-
-                                android:text="Chapter 3"
-                                android:textColor="@color/black"
-                                android:gravity="center"
-                                android:textSize="16sp"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                />
-                        </LinearLayout>
-
-                    </androidx.cardview.widget.CardView>
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/chapter_4"
-                        app:cardBackgroundColor="@color/white"
+                    </LinearLayout>
+                    <LinearLayout
                         android:layout_marginEnd="10dp"
-                        android:layout_marginTop="5dp"
                         android:layout_marginStart="5dp"
-                        android:layout_width="150dp"
-                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical"
+                        android:id="@id/chapter_4"
+                        android:background="@drawable/chapter_name"
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
                         android:layout_row="1"
-                        android:layout_column="1"
-                        android:layout_columnWeight="1"
-                        android:layout_rowWeight="1">
+                        android:layout_column="1">
 
-                        <LinearLayout
+                        <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:orientation="horizontal">
+                            android:gravity="center"
+                            android:textSize="16sp"
+                            android:text="Chapter 4"
+                            android:textColor="@color/black"/>
 
-                            <!--                            <ImageView-->
-                            <!--                                android:src="@drawable/ssc_phy_4"-->
-                            <!--                                android:layout_width="match_parent"-->
-                            <!--                                android:layout_height="match_parent"-->
-                            <!--                                android:layout_gravity="center"/>-->
+                    </LinearLayout>
 
-                            <TextView
-                                android:text="Chapter 4"
-                                android:textColor="@color/black"
-                                android:gravity="center"
-                                android:textSize="16sp"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                />
-                        </LinearLayout>
-
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/chapter_5"
-                        app:cardBackgroundColor="@color/white"
-                        android:layout_marginTop="5dp"
+                    <LinearLayout
                         android:layout_marginStart="10dp"
-                        android:layout_width="150dp"
-                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical"
+                        android:id="@id/chapter_5"
+                        android:background="@drawable/chapter_name"
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
                         android:layout_row="2"
-                        android:layout_column="0"
-                        android:layout_columnWeight="1"
-                        android:layout_rowWeight="1">
+                        android:layout_column="0">
 
-                        <LinearLayout
+                        <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:orientation="horizontal">
+                            android:gravity="center"
+                            android:textSize="16sp"
+                            android:text="Chapter 5"
+                            android:textColor="@color/black"/>
 
-                            <!--                            <ImageView-->
-                            <!--                                android:src="@drawable/biology1"-->
-                            <!--                                android:layout_width="75dp"-->
-                            <!--                                android:layout_height="75dp"-->
-                            <!--                                android:layout_gravity="center"/>-->
-
-                            <TextView
-                                android:text="Chapter 5"
-                                android:textColor="@color/black"
-                                android:gravity="center"
-                                android:textSize="16sp"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                />
-                        </LinearLayout>
-
-                    </androidx.cardview.widget.CardView>
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/chapter_6"
-                        app:cardBackgroundColor="@color/white"
-
+                    </LinearLayout>
+                    <LinearLayout
                         android:layout_marginEnd="10dp"
                         android:layout_marginTop="5dp"
                         android:layout_marginStart="5dp"
-                        android:layout_width="150dp"
-                        android:layout_height="50dp"
+                        android:orientation="vertical"
+                        android:id="@id/chapter_6"
+                        android:background="@drawable/chapter_name"
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
                         android:layout_row="2"
-                        android:layout_column="1"
-                        android:layout_columnWeight="1"
-                        android:layout_rowWeight="1">
+                        android:layout_column="1">
 
-                        <LinearLayout
+                        <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:orientation="horizontal">
+                            android:gravity="center"
+                            android:textSize="16sp"
+                            android:text="Chapter 6"
+                            android:textColor="@color/black"/>
 
-                            <!--                            <ImageView-->
-                            <!--                                android:src="@drawable/ict1"-->
-                            <!--                                android:layout_width="75dp"-->
-                            <!--                                android:layout_height="75dp"-->
-                            <!--                                android:layout_gravity="center"/>-->
-
-                            <TextView
-                                android:text="Chapter 6"
-                                android:textColor="@color/black"
-                                android:gravity="center"
-                                android:textSize="16sp"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                />
-                        </LinearLayout>
-
-                    </androidx.cardview.widget.CardView>
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/chapter_7"
-                        app:cardBackgroundColor="@color/white"
-
-                        android:layout_marginTop="5dp"
+                    </LinearLayout>
+                    <LinearLayout
                         android:layout_marginStart="10dp"
-                        android:layout_width="150dp"
-                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical"
+                        android:id="@id/chapter_7"
+                        android:background="@drawable/chapter_name"
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
                         android:layout_row="3"
-                        android:layout_column="0"
-                        android:layout_columnWeight="1"
-                        android:layout_rowWeight="1">
+                        android:layout_column="0">
 
-                        <LinearLayout
+                        <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:orientation="horizontal">
+                            android:gravity="center"
+                            android:textSize="16sp"
+                            android:text="Chapter 7"
+                            android:textColor="@color/black"/>
 
-                            <!--                            <ImageView-->
-                            <!--                                android:src="@drawable/ict1"-->
-                            <!--                                android:layout_width="75dp"-->
-                            <!--                                android:layout_height="75dp"-->
-                            <!--                                android:layout_gravity="center"/>-->
+                    </LinearLayout>
 
-                            <TextView
-                                android:text="Chapter 7"
-                                android:textColor="@color/black"
-                                android:gravity="center"
-                                android:textSize="16sp"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                />
-                        </LinearLayout>
-
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/chapter_8"
-                        app:cardBackgroundColor="@color/white"
-
-                        android:layout_marginEnd="10dp"
+                    <LinearLayout
                         android:layout_marginTop="5dp"
+                        android:layout_marginEnd="10dp"
                         android:layout_marginStart="5dp"
-                        android:layout_width="150dp"
-                        android:layout_height="50dp"
+                        android:orientation="vertical"
+                        android:id="@id/chapter_8"
+                        android:background="@drawable/chapter_name"
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
                         android:layout_row="3"
-                        android:layout_column="1"
-                        android:layout_columnWeight="1"
-                        android:layout_rowWeight="1">
+                        android:layout_column="1">
 
-                        <LinearLayout
+                        <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:orientation="horizontal">
+                            android:gravity="center"
+                            android:textSize="16sp"
+                            android:text="Chapter 8"
+                            android:textColor="@color/black"/>
 
-                            <!--                            <ImageView-->
-                            <!--                                android:src="@drawable/ict1"-->
-                            <!--                                android:layout_width="75dp"-->
-                            <!--                                android:layout_height="75dp"-->
-                            <!--                                android:layout_gravity="center"/>-->
-
-                            <TextView
-                                android:text="Chapter 8"
-                                android:textColor="@color/black"
-                                android:gravity="center"
-                                android:textSize="16sp"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                />
-                        </LinearLayout>
-
-                    </androidx.cardview.widget.CardView>
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/chapter_9"
-                        app:cardBackgroundColor="@color/white"
-
-                        android:layout_marginTop="5dp"
+                    </LinearLayout>
+                    <LinearLayout
                         android:layout_marginStart="10dp"
-                        android:layout_width="150dp"
-                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical"
+                        android:id="@id/chapter_9"
+                        android:background="@drawable/chapter_name"
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
                         android:layout_row="4"
-                        android:layout_column="0"
-                        android:layout_columnWeight="1"
-                        android:layout_rowWeight="1">
+                        android:layout_column="0">
 
-                        <LinearLayout
+                        <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:orientation="horizontal">
+                            android:gravity="center"
+                            android:textSize="16sp"
+                            android:text="Chapter 9"
+                            android:textColor="@color/black"/>
 
-                            <!--                            <ImageView-->
-                            <!--                                android:src="@drawable/ict1"-->
-                            <!--                                android:layout_width="75dp"-->
-                            <!--                                android:layout_height="75dp"-->
-                            <!--                                android:layout_gravity="center"/>-->
-
-                            <TextView
-                                android:text="Chapter 9"
-                                android:textColor="@color/black"
-                                android:gravity="center"
-                                android:textSize="16sp"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                />
-                        </LinearLayout>
-
-                    </androidx.cardview.widget.CardView>
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/chapter_10"
-                        app:cardBackgroundColor="@color/white"
-
-                        android:layout_marginEnd="10dp"
+                    </LinearLayout>
+                    <LinearLayout
                         android:layout_marginTop="5dp"
+                        android:layout_marginEnd="10dp"
                         android:layout_marginStart="5dp"
-                        android:layout_width="150dp"
-                        android:layout_height="50dp"
+                        android:orientation="vertical"
+                        android:id="@id/chapter_10"
+                        android:background="@drawable/chapter_name"
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
                         android:layout_row="4"
-                        android:layout_column="1"
-                        android:layout_columnWeight="1"
-                        android:layout_rowWeight="1">
+                        android:layout_column="1">
 
-                        <LinearLayout
+                        <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:orientation="horizontal">
+                            android:gravity="center"
+                            android:textSize="16sp"
+                            android:text="Chapter 10"
+                            android:textColor="@color/black"/>
 
-                            <!--                            <ImageView-->
-                            <!--                                android:src="@drawable/ict1"-->
-                            <!--                                android:layout_width="75dp"-->
-                            <!--                                android:layout_height="75dp"-->
-                            <!--                                android:layout_gravity="center"/>-->
-
-                            <TextView
-                                android:text="Chapter 10"
-                                android:textColor="@color/black"
-                                android:gravity="center"
-                                android:textSize="16sp"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                />
-                        </LinearLayout>
-
-                    </androidx.cardview.widget.CardView>
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/chapter_11"
-                        app:cardBackgroundColor="@color/white"
-
+                    </LinearLayout>
+                    <LinearLayout
                         android:layout_marginTop="5dp"
                         android:layout_marginStart="10dp"
-                        android:layout_width="150dp"
-                        android:layout_height="50dp"
-                        android:layout_row="5"
-                        android:layout_column="0"
+                        android:orientation="vertical"
+                        android:id="@id/chapter_11"
+                        android:background="@drawable/chapter_name"
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
                         android:layout_columnWeight="1"
-                        android:layout_rowWeight="1">
+                        android:layout_rowWeight="1"
+                        android:layout_row="5"
+                        android:layout_column="0">
 
-                        <LinearLayout
+                        <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:orientation="horizontal">
+                            android:gravity="center"
+                            android:textSize="16sp"
+                            android:text="Chapter 11"
+                            android:textColor="@color/black"/>
 
-                            <!--                            <ImageView-->
-                            <!--                                android:src="@drawable/ict1"-->
-                            <!--                                android:layout_width="75dp"-->
-                            <!--                                android:layout_height="75dp"-->
-                            <!--                                android:layout_gravity="center"/>-->
-
-                            <TextView
-                                android:text="Chapter 11"
-                                android:textColor="@color/black"
-                                android:gravity="center"
-                                android:textSize="16sp"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                />
-                        </LinearLayout>
-
-                    </androidx.cardview.widget.CardView>
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/chapter_12"
-                        app:cardBackgroundColor="@color/white"
-
-                        android:layout_marginEnd="10dp"
+                    </LinearLayout>
+                    <LinearLayout
                         android:layout_marginTop="5dp"
+                        android:layout_marginEnd="10dp"
                         android:layout_marginStart="5dp"
-                        android:layout_width="150dp"
-                        android:layout_height="50dp"
-                        android:layout_row="5"
-                        android:layout_column="1"
+                        android:orientation="vertical"
+                        android:id="@id/chapter_12"
+                        android:background="@drawable/chapter_name"
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
                         android:layout_columnWeight="1"
-                        android:layout_rowWeight="1">
+                        android:layout_rowWeight="1"
+                        android:layout_row="5"
+                        android:layout_column="1">
 
-                        <LinearLayout
+                        <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:orientation="horizontal">
+                            android:gravity="center"
+                            android:textSize="16sp"
+                            android:text="Chapter 12"
+                            android:textColor="@color/black"/>
 
-                            <!--                            <ImageView-->
-                            <!--                                android:src="@drawable/ict1"-->
-                            <!--                                android:layout_width="75dp"-->
-                            <!--                                android:layout_height="75dp"-->
-                            <!--                                android:layout_gravity="center"/>-->
-
-                            <TextView
-                                android:text="Chapter 12"
-                                android:textColor="@color/black"
-                                android:gravity="center"
-                                android:textSize="16sp"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                />
-                        </LinearLayout>
-
-                    </androidx.cardview.widget.CardView>
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/chapter_13"
-                        app:cardBackgroundColor="@color/white"
+                    </LinearLayout>
+                    <LinearLayout
                         android:layout_marginTop="5dp"
                         android:layout_marginStart="10dp"
-                        android:layout_marginBottom="5dp"
-                        android:layout_width="150dp"
-                        android:layout_height="50dp"
-                        android:layout_row="6"
-                        android:layout_column="0"
+                        android:orientation="vertical"
+                        android:id="@id/chapter_13"
+                        android:background="@drawable/chapter_name"
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
                         android:layout_columnWeight="1"
-                        android:layout_rowWeight="1">
+                        android:layout_rowWeight="1"
+                        android:layout_row="6"
+                        android:layout_column="0">
 
-                        <LinearLayout
+                        <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:orientation="horizontal">
+                            android:gravity="center"
+                            android:textSize="16sp"
+                            android:text="Chapter 13"
+                            android:textColor="@color/black"/>
 
-                            <!--                            <ImageView-->
-                            <!--                                android:src="@drawable/ict1"-->
-                            <!--                                android:layout_width="75dp"-->
-                            <!--                                android:layout_height="75dp"-->
-                            <!--                                android:layout_gravity="center"/>-->
-
-                            <TextView
-                                android:text="Chapter 13"
-                                android:textColor="@color/black"
-                                android:gravity="center"
-                                android:textSize="16sp"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                />
-                        </LinearLayout>
-
-                    </androidx.cardview.widget.CardView>
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/chapter_14"
-                        app:cardBackgroundColor="@color/white"
-                        android:layout_marginEnd="10dp"
+                    </LinearLayout>
+                    <LinearLayout
                         android:layout_marginTop="5dp"
+                        android:layout_marginEnd="10dp"
                         android:layout_marginStart="5dp"
-                        android:layout_marginBottom="5dp"
-                        android:layout_width="150dp"
-                        android:layout_height="50dp"
-                        android:layout_row="6"
-                        android:layout_column="1"
+                        android:orientation="vertical"
+                        android:id="@id/chapter_14"
+                        android:background="@drawable/chapter_name"
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
                         android:layout_columnWeight="1"
-                        android:layout_rowWeight="1">
+                        android:layout_rowWeight="1"
+                        android:layout_row="6"
+                        android:layout_column="1">
 
-                        <LinearLayout
+                        <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:orientation="horizontal">
+                            android:gravity="center"
+                            android:textSize="16sp"
+                            android:text="Chapter 14"
+                            android:textColor="@color/black"/>
 
-                            <!--                            <ImageView-->
-                            <!--                                android:src="@drawable/ict1"-->
-                            <!--                                android:layout_width="75dp"-->
-                            <!--                                android:layout_height="75dp"-->
-                            <!--                                android:layout_gravity="center"/>-->
+                    </LinearLayout>
 
-                            <TextView
-                                android:text="Chapter 14"
-                                android:textColor="@color/black"
-                                android:gravity="center"
-                                android:textSize="16sp"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                />
-                        </LinearLayout>
-
-                    </androidx.cardview.widget.CardView>
                 </GridLayout>
 
                 <!--                <View-->

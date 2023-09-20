@@ -13,10 +13,14 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.google.android.material.imageview.ShapeableImageView;
+
 public class HomeFragment extends Fragment {
 
     CardView gotoUserProfile;
-    CardView SSC , HSC , Admission ,first;
+    CardView SSC , HSC , Admission ,first , notice;
+
+    ShapeableImageView profileImage;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -60,6 +64,23 @@ public class HomeFragment extends Fragment {
             }
         });
 
+        profileImage = view.findViewById(R.id.profileImage);
+        profileImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent( getActivity() , UserProfile.class);
+                startActivity( intent);
+            }
+        });
+
+        notice = view.findViewById(R.id.notice);
+        notice.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent( getActivity() , NoticeBoard.class);
+                startActivity( intent);
+            }
+        });
 
         return view;
  }

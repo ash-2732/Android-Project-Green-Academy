@@ -98,7 +98,9 @@ public class SSC_course extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                String video = "<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/voaXwzxJTr8?si=89GGh_ukimdW3ClO\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>";
+                //String video = "<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/voaXwzxJTr8?si=89GGh_ukimdW3ClO\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>";
+
+                String video = "<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/DfwPsKxqhfU?si=bO9PW7EEI8jjOrsi\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>";
                 String msg = "Free";
                 Intent intent = new Intent(getApplicationContext() , PremiumVideo.class);
                 intent.putExtra("keymsg" , msg);

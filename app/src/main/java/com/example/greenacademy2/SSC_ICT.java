@@ -7,10 +7,11 @@ import androidx.cardview.widget.CardView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.LinearLayout;
 
 public class SSC_ICT extends AppCompatActivity {
 
-    private CardView chapter_1 , chapter_2 , chapter_3 , chapter_4 , chapter_5 , chapter_6;
+    private LinearLayout chapter_1 , chapter_2 , chapter_3 , chapter_4 , chapter_5 , chapter_6;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

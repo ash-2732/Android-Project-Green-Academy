@@ -6,15 +6,15 @@
     android:layout_height="match_parent"
     android:background="@color/back"
     android:orientation="vertical"
-    tools:context=".SSC_Chemistry">
+    tools:context=".HSC_Physics">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbarSSC_Chemistry"
+        android:id="@+id/toolbarHSC_Physics"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:titleTextColor="@color/black"
         android:background="@color/primary"
-        app:title="Chemistry">
+        app:title="Physics">
 
     </androidx.appcompat.widget.Toolbar>
 
@@ -267,52 +267,6 @@
                             android:textColor="@color/black"/>
 
                     </LinearLayout>
-                    <LinearLayout
-                        android:layout_marginTop="5dp"
-                        android:layout_marginStart="10dp"
-                        android:orientation="vertical"
-                        android:id="@id/chapter_11"
-                        android:background="@drawable/chapter_name"
-                        android:layout_width="50dp"
-                        android:layout_height="80dp"
-                        android:layout_columnWeight="1"
-                        android:layout_rowWeight="1"
-                        android:layout_row="5"
-                        android:layout_column="0">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:textSize="16sp"
-                            android:text="Chapter 11"
-                            android:textColor="@color/black"/>
-
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_marginTop="5dp"
-                        android:layout_marginEnd="10dp"
-                        android:layout_marginStart="5dp"
-                        android:orientation="vertical"
-                        android:id="@id/chapter_12"
-                        android:background="@drawable/chapter_name"
-                        android:layout_width="50dp"
-                        android:layout_height="80dp"
-                        android:layout_columnWeight="1"
-                        android:layout_rowWeight="1"
-                        android:layout_row="5"
-                        android:layout_column="1">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:textSize="16sp"
-                            android:text="Chapter 12"
-                            android:textColor="@color/black"/>
-
-                    </LinearLayout>
-
 
                 </GridLayout>
 
