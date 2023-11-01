@@ -13,6 +13,8 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebChromeClient;
+import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -24,7 +26,7 @@ import com.google.android.material.imageview.ShapeableImageView;
 public class HomeFragment extends Fragment {
 
     CardView faq;
-    CardView SSC , HSC , Admission ,first , notice , seeCourse;
+    CardView SSC , HSC , Admission ,first , notice , seeCourse ,seeVideo;
 
     ShapeableImageView profileImage;
 
@@ -97,8 +99,40 @@ public class HomeFragment extends Fragment {
             }
         });
 
+        seeVideo = view.findViewById(R.id.seeVideo);
+        seeVideo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showAlertDialogBox();
+            }
+        });
+
         return view;
  }
+
+    private void showAlertDialogBox() {
+
+        Dialog dialog = new Dialog(getActivity());
+        dialog.setContentView(R.layout.video_dialogbox);
+
+        WebView webView2 = dialog.findViewById(R.id.webView2);
+        //String video = "<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/voaXwzxJTr8?si=89GGh_ukimdW3ClO\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>";
+
+        String video = "<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/qxYbHzn8bbU?si=ywO_Tz_PCNqQXWpo\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>";
+        webView2.loadData(video,"text/html" , "utf-8");
+        webView2.getSettings().setJavaScriptEnabled( true );
+        webView2.setWebChromeClient( new WebChromeClient());
+
+        ImageView cancelVideo = dialog.findViewById(R.id.cancelVideo);
+        cancelVideo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //Toast.makeText(SSC_course.this, "Video Stopped", Toast.LENGTH_SHORT).show();
+                dialog.dismiss();
+            }
+        });
+        dialog.show();
+    }
 
     private void showCourseDialogBox() {
 
@@ -137,6 +171,8 @@ public class HomeFragment extends Fragment {
                 startActivity(intent);
             }
         });
+
+
 
         final AlertDialog dialog = alertDialog.create();
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));

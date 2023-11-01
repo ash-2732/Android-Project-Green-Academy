@@ -54,7 +54,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_marginBottom="80dp"
+        android:layout_marginBottom="60dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
@@ -86,7 +86,7 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:src="@drawable/academic_post"/>
+                            android:src="@drawable/live_course3"/>
 
 
                     </androidx.cardview.widget.CardView>
@@ -339,65 +339,29 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="05dp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
 
-                    <TextView
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/seeVideo"
+                        app:cardBackgroundColor="@color/white"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textSize="16sp"
-                        android:textColor="@color/black"
                         android:layout_marginStart="10dp"
-                        android:text="জেনে রাখো"/>
-
-                    <TextView
-                        android:layout_marginTop="5dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textSize="16sp"
-                        android:textColor="@color/black"
-                        android:layout_marginStart="10dp"
-                        android:gravity="center"
-                        android:text="Which one is correct?"/>
-
-                    <LinearLayout
-                        android:background="@drawable/option_select"
-                        android:layout_width="match_parent"
-                        android:layout_marginStart="20dp"
-                        android:layout_marginEnd="20dp"
+                        android:layout_marginEnd="10dp"
                         android:layout_marginTop="10dp"
-                        android:layout_height="50sp">
+                        app:cardCornerRadius="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_height="175dp">
 
-                    </LinearLayout>
-                    <LinearLayout
-                        android:background="@drawable/option_select"
-                        android:layout_width="match_parent"
-                        android:layout_marginStart="20dp"
-                        android:layout_marginEnd="20dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_height="50sp">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/live_course1"/>
 
-                    </LinearLayout>
-                    <LinearLayout
-                        android:background="@drawable/option_select"
-                        android:layout_width="match_parent"
-                        android:layout_marginStart="20dp"
-                        android:layout_marginEnd="20dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_height="50sp">
 
-                    </LinearLayout>
-                    <LinearLayout
-                        android:background="@drawable/option_select"
-                        android:layout_width="match_parent"
-                        android:layout_marginStart="20dp"
-                        android:layout_marginEnd="20dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_height="50sp">
-
-                    </LinearLayout>
+                    </androidx.cardview.widget.CardView>
 
                 </LinearLayout>
 
