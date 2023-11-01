@@ -401,7 +401,12 @@
                         android:layout_margin="10dp"
                         app:cardCornerRadius="5dp"
                         android:layout_width="match_parent"
-                        android:layout_height="200sp">
+                        android:layout_height="175sp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/academic_post"/>
 
                     </androidx.cardview.widget.CardView>
 
@@ -456,60 +461,51 @@
 
                             <androidx.cardview.widget.CardView
                                 android:id="@+id/free1"
-                                app:cardBackgroundColor="#FF9671"
+                                app:cardBackgroundColor="#FCF7FF"
                                 app:cardCornerRadius="5dp"
-                                android:layout_marginStart="10dp"
                                 android:layout_marginTop="5dp"
+                                android:layout_marginStart="10dp"
                                 android:layout_marginBottom="5dp"
-                                android:layout_width="200dp"
+                                android:layout_width="180dp"
                                 android:layout_height="100dp">
 
-                                <TextView
+                                <ImageView
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:text="HSC\nTest Paper Solve"
-                                    android:textColor="@color/black"
-                                    android:textSize="20sp"
-                                    android:gravity="center"/>
+                                    android:src="@drawable/live_course1"/>
 
                             </androidx.cardview.widget.CardView>
                             <androidx.cardview.widget.CardView
                                 android:id="@+id/free2"
-                                app:cardBackgroundColor="#00C9A7"
+                                app:cardBackgroundColor="#FCF7FF"
                                 app:cardCornerRadius="5dp"
                                 android:layout_marginStart="5dp"
                                 android:layout_marginTop="5dp"
                                 android:layout_marginBottom="5dp"
-                                android:layout_width="200dp"
+                                android:layout_width="180dp"
                                 android:layout_height="100dp">
 
-                                <TextView
+                                <ImageView
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:text="HSC\nMCQ Solve"
-                                    android:textColor="@color/black"
-                                    android:textSize="20sp"
-                                    android:gravity="center"/>
+                                    android:src="@drawable/live_course2"/>
 
                             </androidx.cardview.widget.CardView>
                             <androidx.cardview.widget.CardView
                                 android:id="@+id/free3"
-                                app:cardBackgroundColor="#FFC75F"
+                                app:cardBackgroundColor="#FCF7FF"
                                 app:cardCornerRadius="5dp"
                                 android:layout_marginStart="5dp"
-                                android:layout_marginBottom="5dp"
                                 android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
                                 android:layout_marginEnd="10dp"
-                                android:layout_width="200dp"
+                                android:layout_width="180dp"
                                 android:layout_height="100dp">
 
-                                <TextView
+                                <ImageView
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:text="HSC\nFull Book\nRevision"
-                                    android:textColor="@color/black"
-                                    android:textSize="20sp"
-                                    android:gravity="center"/>
+                                    android:src="@drawable/live_course3"/>
 
                             </androidx.cardview.widget.CardView>
 
@@ -547,60 +543,52 @@
 
                             <androidx.cardview.widget.CardView
                                 android:id="@+id/premium1"
-                                app:cardBackgroundColor="#00D2FC"
+                                app:cardBackgroundColor="#FFC75F"
                                 app:cardCornerRadius="5dp"
                                 android:layout_marginStart="10dp"
                                 android:layout_marginTop="5dp"
                                 android:layout_marginBottom="5dp"
-                                android:layout_width="200dp"
+                                android:layout_width="180dp"
                                 android:layout_height="100dp">
 
-                                <TextView
+                                <ImageView
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:text="HSC\nEnglish\nGrammar"
-                                    android:textColor="@color/black"
-                                    android:textSize="20sp"
-                                    android:gravity="center"/>
+                                    android:src="@drawable/live_course4"/>
+
 
                             </androidx.cardview.widget.CardView>
                             <androidx.cardview.widget.CardView
                                 android:id="@+id/premium2"
                                 app:cardBackgroundColor="#845EC2"
                                 app:cardCornerRadius="5dp"
-                                android:layout_marginStart="5dp"
                                 android:layout_marginTop="5dp"
+                                android:layout_marginStart="5dp"
                                 android:layout_marginBottom="5dp"
-                                android:layout_width="200dp"
+                                android:layout_width="180dp"
                                 android:layout_height="100dp">
 
-                                <TextView
+                                <ImageView
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:text="HSC\nBangla Course"
-                                    android:textColor="@color/black"
-                                    android:textSize="20sp"
-                                    android:gravity="center"/>
+                                    android:src="@drawable/live_course5"/>
 
                             </androidx.cardview.widget.CardView>
                             <androidx.cardview.widget.CardView
                                 android:id="@+id/premium3"
-                                app:cardBackgroundColor="#C34A36"
+                                app:cardBackgroundColor="#FCF7FF"
                                 app:cardCornerRadius="5dp"
-                                android:layout_marginStart="5dp"
-                                android:layout_marginEnd="10dp"
-                                android:layout_marginBottom="5dp"
                                 android:layout_marginTop="5dp"
-                                android:layout_width="200dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_width="180dp"
                                 android:layout_height="100dp">
 
-                                <TextView
+                                <ImageView
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:text="HSC\nCrash Course"
-                                    android:textColor="@color/black"
-                                    android:textSize="20sp"
-                                    android:gravity="center"/>
+                                    android:src="@drawable/live_course6"/>
 
                             </androidx.cardview.widget.CardView>
 
