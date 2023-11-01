@@ -12,7 +12,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:background="@drawable/home_background"
-        android:layout_height="120dp">
+        android:layout_height="110dp">
 
         <TextView
             android:layout_width="match_parent"
@@ -80,6 +80,7 @@
                        android:orientation="horizontal">
 
                        <androidx.cardview.widget.CardView
+                           android:id="@+id/python"
                            app:cardBackgroundColor="@color/white"
                            app:cardCornerRadius="5dp"
                            android:layout_marginStart="10dp"
@@ -111,6 +112,7 @@
 
                        </androidx.cardview.widget.CardView>
                        <androidx.cardview.widget.CardView
+                           android:id="@+id/c"
                            app:cardBackgroundColor="@color/white"
                            app:cardCornerRadius="5dp"
                            android:layout_marginStart="5dp"
@@ -142,6 +144,7 @@
 
                        </androidx.cardview.widget.CardView>
                        <androidx.cardview.widget.CardView
+                           android:id="@+id/cc"
                            app:cardBackgroundColor="@color/white"
                            app:cardCornerRadius="5dp"
                            android:layout_marginStart="5dp"
@@ -173,6 +176,7 @@
 
                        </androidx.cardview.widget.CardView>
                        <androidx.cardview.widget.CardView
+                           android:id="@+id/java"
                            app:cardBackgroundColor="@color/white"
                            app:cardCornerRadius="5dp"
                            android:layout_marginStart="5dp"
@@ -253,6 +257,7 @@
                        android:orientation="horizontal">
 
                        <androidx.cardview.widget.CardView
+                           android:id="@+id/html"
                            app:cardBackgroundColor="@color/white"
                            app:cardCornerRadius="5dp"
                            android:layout_marginStart="10dp"
@@ -284,6 +289,7 @@
 
                        </androidx.cardview.widget.CardView>
                        <androidx.cardview.widget.CardView
+                           android:id="@+id/css"
                            app:cardBackgroundColor="@color/white"
                            app:cardCornerRadius="5dp"
                            android:layout_marginStart="5dp"
@@ -315,6 +321,7 @@
 
                        </androidx.cardview.widget.CardView>
                        <androidx.cardview.widget.CardView
+                           android:id="@+id/javaScript"
                            app:cardBackgroundColor="@color/white"
                            app:cardCornerRadius="5dp"
                            android:layout_marginStart="5dp"
@@ -395,6 +402,7 @@
                        android:orientation="horizontal">
 
                        <androidx.cardview.widget.CardView
+                           android:id="@+id/video"
                            app:cardBackgroundColor="@color/white"
                            app:cardCornerRadius="5dp"
                            android:layout_marginStart="10dp"
@@ -426,6 +434,7 @@
 
                        </androidx.cardview.widget.CardView>
                        <androidx.cardview.widget.CardView
+                           android:id="@+id/freelancing"
                            app:cardBackgroundColor="@color/white"
                            app:cardCornerRadius="5dp"
                            android:layout_marginStart="5dp"
@@ -457,6 +466,7 @@
 
                        </androidx.cardview.widget.CardView>
                        <androidx.cardview.widget.CardView
+                           android:id="@+id/marketing"
                            app:cardBackgroundColor="@color/white"
                            app:cardCornerRadius="5dp"
                            android:layout_marginStart="5dp"
@@ -488,6 +498,7 @@
 
                        </androidx.cardview.widget.CardView>
                        <androidx.cardview.widget.CardView
+                           android:id="@+id/speaking"
                            app:cardBackgroundColor="@color/white"
                            app:cardCornerRadius="5dp"
                            android:layout_marginStart="5dp"
@@ -519,6 +530,7 @@
 
                        </androidx.cardview.widget.CardView>
                        <androidx.cardview.widget.CardView
+                           android:id="@+id/graphics"
                            app:cardBackgroundColor="@color/white"
                            app:cardCornerRadius="5dp"
                            android:layout_marginStart="5dp"

@@ -12,7 +12,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:background="@drawable/home_background"
-        android:layout_height="120dp">
+        android:layout_height="110dp">
 
         <TextView
             android:layout_width="match_parent"
@@ -53,6 +53,7 @@
                         android:text="Account"/>
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/seeProfile"
                         app:cardBackgroundColor="@color/white"
                         android:layout_marginStart="2dp"
                         android:layout_marginEnd="2dp"

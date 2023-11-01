@@ -33,6 +33,7 @@
                 android:layout_height="match_parent">
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/html"
                     app:cardBackgroundColor="@color/white"
                     app:cardCornerRadius="5dp"
                     android:layout_marginStart="10dp"
@@ -85,6 +86,7 @@
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/css"
                     app:cardBackgroundColor="@color/white"
                     app:cardCornerRadius="5dp"
                     android:layout_marginTop="5dp"
@@ -137,6 +139,7 @@
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/javaScript"
                     app:cardBackgroundColor="@color/white"
                     android:layout_marginBottom="5dp"
                     app:cardCornerRadius="5dp"

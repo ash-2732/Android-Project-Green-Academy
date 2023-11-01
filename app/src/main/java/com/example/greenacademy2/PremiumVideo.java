@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 
 import android.app.Dialog;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.webkit.WebChromeClient;
@@ -15,7 +17,7 @@ import android.widget.Toast;
 public class PremiumVideo extends AppCompatActivity {
 
     private TextView msg , teacher_1 , teacher_2 ;
-    private AppCompatButton showVideo;
+    private AppCompatButton showVideo , callNow;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,6 +55,18 @@ public class PremiumVideo extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 showAlertDialogBox();
+            }
+        });
+
+
+        // for calling
+        callNow = findViewById(R.id.callNow);
+        callNow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Intent.ACTION_DIAL);
+                intent.setData(Uri.parse("tel:01781268486"));
+                startActivity(intent);
             }
         });
 

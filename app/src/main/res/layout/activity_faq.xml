@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    android:orientation="vertical"
+    tools:context=".FAQ">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_faq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@color/black"
+        android:background="@color/primary"
+        app:title="FAQ">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:contentDescription="Upload your image"
+                    android:id="@+id/imageButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="350sp"/>
+                <EditText
+                    android:hint="Your Name"
+                    android:padding="10dp"
+                    android:background="@drawable/chapter_name"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:id="@+id/editfirstname"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/black"
+                    android:inputType="textPersonName"
+                    android:layout_height="60dp"/>
+
+                <EditText
+                    android:hint="Write your problem"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:background="@drawable/chapter_name"
+                    android:id="@+id/editlastname"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="match_parent"
+                    android:inputType="textPersonName"
+                    android:layout_height="60dp"/>
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Send your Question"
+                        android:gravity="end"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginTop="20dp"
+                        />
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:layout_marginEnd="10dp"
+                        android:id="@+id/btnInsert"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="See your post"
+                        android:gravity="end"
+                        android:layout_marginTop="20dp"
+                        />
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:layout_marginEnd="10dp"
+                        android:id="@+id/seePost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

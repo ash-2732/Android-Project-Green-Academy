@@ -26,6 +26,7 @@ public class StartAfterOpenning extends AppCompatActivity {
 
     ActivityStartAfterOpenningBinding binding;
     //BottomNavigationView bottomNavigationView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,12 +52,12 @@ public class StartAfterOpenning extends AppCompatActivity {
             return true;
         });
 
-        binding.fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                showBottomDialog();
-            }
-        });
+//        binding.fab.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                showBottomDialog();
+//            }
+//        });
 
     }
 

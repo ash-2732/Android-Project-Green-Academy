@@ -40,7 +40,7 @@
                     android:columnCount="2">
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/hsc_physics"
+                        android:id="@+id/hsc_physics1"
                         app:cardBackgroundColor="@color/white"
                         app:cardCornerRadius="5dp"
                         android:layout_marginStart="10dp"
@@ -76,6 +76,7 @@
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/hsc_physics2"
                         app:cardBackgroundColor="@color/white"
                         app:cardCornerRadius="5dp"
                         android:layout_marginEnd="10dp"
@@ -111,6 +112,7 @@
 
                     </androidx.cardview.widget.CardView>
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/hsc_chemistry1"
                         app:cardBackgroundColor="@color/white"
                         app:cardCornerRadius="5dp"
                         android:layout_marginTop="5dp"
@@ -145,6 +147,7 @@
 
                     </androidx.cardview.widget.CardView>
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/hsc_chemistry2"
                         app:cardBackgroundColor="@color/white"
                         app:cardCornerRadius="5dp"
                         android:layout_marginEnd="10dp"
@@ -181,6 +184,7 @@
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/hsc_higherMath1"
                         app:cardBackgroundColor="@color/white"
                         app:cardCornerRadius="5dp"
                         android:layout_marginStart="10dp"
@@ -216,6 +220,7 @@
 
                     </androidx.cardview.widget.CardView>
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/hsc_higherMath2"
                         app:cardBackgroundColor="@color/white"
                         app:cardCornerRadius="5dp"
                         android:layout_marginEnd="10dp"
@@ -251,6 +256,7 @@
 
                     </androidx.cardview.widget.CardView>
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/hsc_biology1"
                         app:cardBackgroundColor="@color/white"
                         app:cardCornerRadius="5dp"
                         android:layout_marginStart="10dp"
@@ -286,6 +292,7 @@
 
                     </androidx.cardview.widget.CardView>
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/hsc_biology2"
                         app:cardBackgroundColor="@color/white"
                         app:cardCornerRadius="5dp"
                         android:layout_marginEnd="10dp"
@@ -322,6 +329,7 @@
 
                     </androidx.cardview.widget.CardView>
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/hsc_ict"
                         app:cardBackgroundColor="@color/white"
                         app:cardCornerRadius="5dp"
                         android:layout_marginStart="10dp"
@@ -388,6 +396,7 @@
                         android:text="You can enroll in this batch from anywhere of the country"/>
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/details"
                         app:cardBackgroundColor="@color/white"
                         android:layout_margin="10dp"
                         app:cardCornerRadius="5dp"
@@ -405,7 +414,7 @@
                         android:text="Online batch(Physics,Chemistry,Math,Biology)"/>
 
                     <androidx.appcompat.widget.AppCompatButton
-                        android:id="@+id/sendDetails"
+                        android:id="@+id/seeDetails"
                         android:layout_width="match_parent"
                         android:layout_height="55dp"
                         android:layout_marginStart="16dp"
@@ -446,33 +455,64 @@
                             android:orientation="horizontal">
 
                             <androidx.cardview.widget.CardView
-                                app:cardBackgroundColor="@color/white"
-                                android:layout_margin="10dp"
+                                android:id="@+id/free1"
+                                app:cardBackgroundColor="#FF9671"
+                                app:cardCornerRadius="5dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
                                 android:layout_width="200dp"
                                 android:layout_height="100dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="HSC\nTest Paper Solve"
+                                    android:textColor="@color/black"
+                                    android:textSize="20sp"
+                                    android:gravity="center"/>
 
                             </androidx.cardview.widget.CardView>
                             <androidx.cardview.widget.CardView
-                                app:cardBackgroundColor="@color/white"
-                                android:layout_margin="10dp"
+                                android:id="@+id/free2"
+                                app:cardBackgroundColor="#00C9A7"
+                                app:cardCornerRadius="5dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
                                 android:layout_width="200dp"
                                 android:layout_height="100dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="HSC\nMCQ Solve"
+                                    android:textColor="@color/black"
+                                    android:textSize="20sp"
+                                    android:gravity="center"/>
 
                             </androidx.cardview.widget.CardView>
                             <androidx.cardview.widget.CardView
-                                app:cardBackgroundColor="@color/white"
-                                android:layout_margin="10dp"
+                                android:id="@+id/free3"
+                                app:cardBackgroundColor="#FFC75F"
+                                app:cardCornerRadius="5dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="10dp"
                                 android:layout_width="200dp"
                                 android:layout_height="100dp">
 
-                            </androidx.cardview.widget.CardView>
-                            <androidx.cardview.widget.CardView
-                                app:cardBackgroundColor="@color/white"
-                                android:layout_margin="10dp"
-                                android:layout_width="200dp"
-                                android:layout_height="100dp">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="HSC\nFull Book\nRevision"
+                                    android:textColor="@color/black"
+                                    android:textSize="20sp"
+                                    android:gravity="center"/>
 
                             </androidx.cardview.widget.CardView>
+
                         </LinearLayout>
 
                     </HorizontalScrollView>
@@ -506,33 +546,64 @@
                             android:orientation="horizontal">
 
                             <androidx.cardview.widget.CardView
-                                app:cardBackgroundColor="@color/white"
-                                android:layout_margin="10dp"
+                                android:id="@+id/premium1"
+                                app:cardBackgroundColor="#00D2FC"
+                                app:cardCornerRadius="5dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
                                 android:layout_width="200dp"
                                 android:layout_height="100dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="HSC\nEnglish\nGrammar"
+                                    android:textColor="@color/black"
+                                    android:textSize="20sp"
+                                    android:gravity="center"/>
 
                             </androidx.cardview.widget.CardView>
                             <androidx.cardview.widget.CardView
-                                app:cardBackgroundColor="@color/white"
-                                android:layout_margin="10dp"
+                                android:id="@+id/premium2"
+                                app:cardBackgroundColor="#845EC2"
+                                app:cardCornerRadius="5dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
                                 android:layout_width="200dp"
                                 android:layout_height="100dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="HSC\nBangla Course"
+                                    android:textColor="@color/black"
+                                    android:textSize="20sp"
+                                    android:gravity="center"/>
 
                             </androidx.cardview.widget.CardView>
                             <androidx.cardview.widget.CardView
-                                app:cardBackgroundColor="@color/white"
-                                android:layout_margin="10dp"
+                                android:id="@+id/premium3"
+                                app:cardBackgroundColor="#C34A36"
+                                app:cardCornerRadius="5dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="5dp"
                                 android:layout_width="200dp"
                                 android:layout_height="100dp">
 
-                            </androidx.cardview.widget.CardView>
-                            <androidx.cardview.widget.CardView
-                                app:cardBackgroundColor="@color/white"
-                                android:layout_margin="10dp"
-                                android:layout_width="200dp"
-                                android:layout_height="100dp">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="HSC\nCrash Course"
+                                    android:textColor="@color/black"
+                                    android:textSize="20sp"
+                                    android:gravity="center"/>
 
                             </androidx.cardview.widget.CardView>
+
                         </LinearLayout>
 
                     </HorizontalScrollView>

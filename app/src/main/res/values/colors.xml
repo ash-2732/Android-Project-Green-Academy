@@ -10,5 +10,6 @@
     <color name="colorSuccess">#4bb543</color>
     <color name="bootstrap">#5cb85c</color>
 
-    <color name="back">#F4F7FD</color>
+    <color name="back">#f4f7fd</color>
+    <color name="back1">#f4f7fd</color>
 </resources>

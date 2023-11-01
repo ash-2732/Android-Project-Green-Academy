@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_bkg"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:padding="20dp"
+        android:layout_marginLeft="20dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:text="Select Your Course"
+                />
+            <ImageButton
+                android:background="@color/white"
+                android:id="@+id/cancelButton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/baseline_clear_24"
+                android:layout_gravity="right|top"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="#1A000000"/>
+
+        <LinearLayout
+            android:id="@+id/SSC_Course"
+            android:background="@color/white"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="80sp">
+
+            <ImageView
+
+                android:layout_gravity="center_vertical"
+                android:layout_width="55dp"
+                android:src="@drawable/ssc"
+                android:layout_height="55dp"/>
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/black"
+                android:text="SSC Course"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/HSC_Course"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="80sp">
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_width="55dp"
+                android:src="@drawable/hsc"
+                android:layout_height="55dp"/>
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/black"
+                android:text="HSC Course"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/Admission_Course"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_width="55dp"
+                android:src="@drawable/admission"
+                android:layout_height="55dp"/>
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/black"
+                android:text="Admission Course"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,7 +1,10 @@
 package com.example.greenacademy2;
 
+import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 
 import androidx.cardview.widget.CardView;
@@ -11,14 +14,17 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.google.android.material.imageview.ShapeableImageView;
 
 public class HomeFragment extends Fragment {
 
-    CardView gotoUserProfile;
-    CardView SSC , HSC , Admission ,first , notice;
+    CardView faq;
+    CardView SSC , HSC , Admission ,first , notice , seeCourse;
 
     ShapeableImageView profileImage;
 
@@ -28,11 +34,11 @@ public class HomeFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-        gotoUserProfile = view.findViewById(R.id.gotoUserProfile);
-        gotoUserProfile.setOnClickListener(new View.OnClickListener() {
+        faq = view.findViewById(R.id.faq);
+        faq.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent( getActivity() , UserProfile.class);
+                Intent intent = new Intent( getActivity() , FAQ.class);
                 startActivity( intent);
             }
         });
@@ -82,6 +88,69 @@ public class HomeFragment extends Fragment {
             }
         });
 
+        seeCourse = view.findViewById(R.id.seeCourse);
+        seeCourse.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                showCourseDialogBox();
+            }
+        });
+
         return view;
  }
+
+    private void showCourseDialogBox() {
+
+        LinearLayout SSC_Course , HSC_Course , Admission_Course;
+
+        View alertCustomDialog = LayoutInflater.from(getActivity()).inflate(R.layout.courseview_layout , null);
+        AlertDialog.Builder alertDialog = new AlertDialog.Builder(getActivity());
+
+        alertDialog.setView(alertCustomDialog);
+        ImageButton cancelButton = alertCustomDialog.findViewById(R.id.cancelButton);
+
+        SSC_Course = alertCustomDialog.findViewById(R.id.SSC_Course);
+        HSC_Course = alertCustomDialog.findViewById(R.id.HSC_Course);
+        Admission_Course = alertCustomDialog.findViewById(R.id.Admission_Course);
+
+        SSC_Course.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity() , SSC_course.class);
+                startActivity(intent);
+            }
+        });
+
+        HSC_Course.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity() , HSC_course.class);
+                startActivity(intent);
+            }
+        });
+
+        Admission_Course.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity() , Admission_course.class);
+                startActivity(intent);
+            }
+        });
+
+        final AlertDialog dialog = alertDialog.create();
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        dialog.show();
+
+        cancelButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialog.cancel();
+                //Toast.makeText(getActivity(), "Closed!", Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
+
+
+
 }

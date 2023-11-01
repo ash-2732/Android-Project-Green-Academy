@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         app:titleTextColor="@color/black"
         android:background="@color/primary"
-        app:title="Physics">
+        app:title="Physics 1st">
 
     </androidx.appcompat.widget.Toolbar>
 
